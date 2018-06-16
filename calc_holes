@@ -1,0 +1,13 @@
+#!/bin/sh
+accid="$1"
+./getseq $accid
+fasta_file="$accid.fasta"
+rna_fold_file="$accid.fold"
+finger_print_file="$accid.holes"
+
+
+RNAfold -p -d2 --noLP --noPS < $fasta_file  >  $rna_fold_file
+
+python holes.py $rna_fold_file > $finger_print_file
+
+
