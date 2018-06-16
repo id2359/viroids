@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+import sys
+from Bio import Entrez
+Entrez.email = 'id2359@yahoo.com'
+
+seq_id = sys.argv[1]
+
+file_name = "%s.fasta" % seq_id
+seq_file = open(file_name, 'w')
+
+handle = Entrez.efetch(db="nucleotide", id=seq_id, rettype="fasta", retmode="text")
+record = handle.read()
+
+seq_file.write(record.rstrip('\n'))
+seq_file.close()
