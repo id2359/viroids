@@ -8,8 +8,6 @@ def get_mutations(nt):
     # return the other letters?
     return ['G','C','U','A'].remove(nt) # ??
 
-
-
 def create_mutation(seq, pos, mut):
     result = []
     for i in len(seq):
@@ -44,13 +42,17 @@ for pos in range(l):
         mutation_shape = run_rna_fold(mutation_seq)
         hamming_dist = hamming(wild_shape, mutation_shape)
         hamming_dists.append(hamming_dist)
-    average_hamming = sum(hamming_dists) / len(hamming_dist)
+    average_hamming = sum(hamming_dists) / len(hamming_dists)
     score_map[pos] = average_hamming
 
 
 # we should now process the scores somehow, e.g. create a fingerprint
 # based on the score?
 # dump scores to a file for now
+
+# ideas for features would be simple stats, or percentage over threshold
+# skewness
+
 
 score_file_name = fasta_file_name.replace(".fasta", ".score")
 
