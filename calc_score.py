@@ -78,6 +78,8 @@ wild_shape = get_shape(wild_fasta_file)
 
 score_map = {}
 
+best_pos = -1
+best_score = -1
 
 for pos in range(l):
     print "pos = %s" % pos
@@ -96,6 +98,10 @@ for pos in range(l):
     average_hamming = float(sum(hamming_dists)) / float(len(hamming_dists))
     score = round(average_hamming, 4)
     print "score = %s" % score
+    if score > best_score:
+        best_score = score
+        best_pos = pos
+
     score_map[pos] = score
 
 
@@ -112,4 +118,6 @@ score_file = wild_fasta_file + ".score"
 with open(score_file, "w") as sf:
     for pos in score_map:
         sf.write("%s " % score_map[pos])
+
+print "most effective mutation pos = %s score = %s" % (best_pos, best_score)
 
