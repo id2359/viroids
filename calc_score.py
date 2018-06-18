@@ -8,7 +8,7 @@ def hamming(str1, str2):
 
 def get_mutations(nt):
     # return the other letters?
-    l = ['G','C','U','A','T']
+    l = ['G','C','U','A']
     l.remove(nt)
     return l
 
