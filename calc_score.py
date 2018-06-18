@@ -24,7 +24,10 @@ def create_mutation(seq, pos, mut):
 
 def get_sequence(fasta_file):
     fasta = SeqIO.read(fasta_file, "fasta")
-    return "%s" % fasta.seq
+    s = "%s" % fasta.seq
+    # orig fasta file has T but seq in output of RNA file has U
+    # in place of T ????
+    return s.replace("T", "U")
 
 def parse_shape(rna_fold_output):
     lines = rna_fold_output.split("\n")
