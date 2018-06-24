@@ -58,11 +58,8 @@ pipeline = make_pipeline(rfr)
 
 model = pipeline.fit(x_train, y_train)
 
-
 predictions = model.predict(x_test)
-print predictions
 
-#print "MSE = %s" % np.sqrt(mean_squared_error(predictions, y_test))
-
+print "y_test = %s" % y_test
+print "predictions = %s" % predictions
 print model.score(x_test, y_test)
-
