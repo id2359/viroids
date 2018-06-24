@@ -1,0 +1,35 @@
+NC_000885 Tomato_chlorotic_dwarf_viroid 360 nt 22  plants pospiviroid Tomato_chlorotic_dwarf_viroid CCR_motif
+NC_001340 Apple_scar_skin_viroid 329 nt 159  plants Apscaviroid
+NC_001351 Hop_stunt_viroid 302 nt 733  plants Hostuviroid Hop_stunt_viroid CCR_motif
+NC_001462 Coconut_cadang-cadang_viroid 246 nt 9  plants Cocadviroid Coconut_cadang-cadang_viroid CCR_motif
+NC_001464 Citrus_exocortis_viroid 371 nt 285  plants pospiviroid Citrus_exocortis_viroid CCR_motif
+NC_001471 Coconut_tinangaja_viroid 254 nt -  plants Cocadviroid Coconut_tinangaja_viroid CCR_motif
+NC_001553 Tomato_apical_stunt_viroid 360 nt 28  plants pospiviroid Tomato_apical_stunt_viroid CCR_motif
+NC_001558 Tomato_planta_macho_viroid 360 nt -  plants pospiviroid Tomato_planta_macho_viroid CCR_motif
+NC_001651 Citrus_bent_leaf_viroid 315 nt 81  plants Apscaviroid
+NC_001830 Pear_blister_canker_viroid 315 nt 74  plants Apscaviroid
+NC_001920 Grapevine_yellow_speckle_viroid_1 366 nt 136  plants Apscaviroid
+NC_002015 Chrysanthemum_stunt_viroid 356 nt 459  plants pospiviroid Chrysanthemum_stunt_viroid CCR_motif
+NC_002030 Potato_spindle_tuber_viroid 359 nt 363  plants pospiviroid Potato_spindle_tuber_viroid CCR_motif
+NC_003264 Citrus_dwarfing_viroid 292 nt 204  plants Apscaviroid
+NC_003463 Apple_dimple_fruit_viroid 306 nt 37  plants Apscaviroid
+NC_003538 Columnea_latent_viroid 370 nt 90  plants pospiviroid Columnea_latent_viroid CCR_motif
+NC_003539 Citrus_bark_cracking_viroid 284 nt 32  plants Cocadviroid Citrus_viroid_IV_virus CCR_motif
+NC_003553 Australian_grapevine_viroid 369 nt 164  plants Apscaviroid
+NC_003611 Hop_latent_viroid 256 nt 23  plants Cocadviroid Hop_latent_viroid CCR_motif
+NC_003612 Grapevine_yellow_speckle_viroid_2 363 nt 83  plants Apscaviroid
+NC_003613 Iresine_viroid_1 370 nt 11  plants pospiviroid Iresine_viroid_1 CCR_motif
+NC_003637 Mexican_papita_viroid 360 nt 15  plants pospiviroid Mexican_papita_viroid CCR_motif
+NC_003681 Coleus_blumei_viroid_1 248 nt 11  plants Coleviroids
+NC_003682 Coleus_blumei_viroid_2 301 nt 7  plants Coleviroids Coleus_blumei_viroid_2 CCR_motif
+NC_003683 Coleus_blumei_viroid_3 364 nt 4  plants Coleviroids Coleus_blumei_viroid_3 CCR_motif
+NC_003882 Coleus_blumei_viroid 295 nt -  plants Coleviroids
+NC_004359 Citrus_viroid_VI 330 nt 23  plants Apscaviroid
+NC_010165 Citrus_viroid_V 294 nt 23  plants Apscaviroid
+NC_011590 Pepper_chat_fruit_viroid 348 nt 56  plants Pospiviroid Pepper_chat_fruit_viroid CCR_motif
+NC_012127 Coleus_blumei_viroid_5 274 nt 3  plants Coleviroids
+NC_012805 Coleus_blumei_viroid_6 342 nt 2  plants Coleviroids
+NC_020160 Dahlia_latent_viroid 342 nt 1  plants Hostuviroid Dahlia_latent_viroid CCR_motif
+NC_021720 Persimmon_viroid_2 358 nt -  plants Apscaviroid
+NC_027432 Portulaca_latent_viroid 351 nt -  plants Pospiviroid Portulaca_latent_viroid_isolate_Vd21 CCR_motif
+NC_035620 Lychee_viroid-like_RNA 304 nt -  plants Apscaviroid

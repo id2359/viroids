@@ -1,0 +1,15 @@
+#get list of ids to prepare images to move to subdirectory
+NC_002015
+NC_001464
+NC_003538
+NC_003613
+NC_003637
+NC_002030
+NC_001553
+NC_000885
+NC_001558
+
+#then print id to moveto subdirectory
+awk '{print $1 "*.ps"}' | tr '\n' '\t' > list_mod.ids
+
+
