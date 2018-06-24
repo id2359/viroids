@@ -1,0 +1,48 @@
+,ACCID,ARC1,ARC2,ARC3,ARC4,ARC5,ARC6,ARC7,ARC8,ARC9,ARC10,STRAIN,TYPE
+0,NC_035620.1,18,16,3,4,5,1,0,0,0,0,, Pospiviroidae
+1,NC_001651.1,28,10,3,4,2,1,0,1,0,1,CBLVd-225, Pospiviroidae
+2,NC_028271.1,13,18,8,7,1,0,1,0,0,0,, unclassified viroids
+3,NC_028132.1,27,12,6,5,1,3,1,1,0,0,, unclassified viroids
+4,NC_028131.1,26,7,5,1,5,1,0,3,0,0,, unclassified viroids
+5,NC_027432.1,26,13,7,3,2,1,0,0,0,0,, Pospiviroidae
+6,NC_003683.1,31,9,9,1,0,0,0,0,0,0,, Pospiviroidae
+7,NC_003682.1,20,9,6,4,1,0,0,0,0,0,, Pospiviroidae
+8,NC_003681.1,10,12,6,4,1,0,1,0,0,0,, Pospiviroidae
+9,NC_003636.1,20,6,2,5,0,3,0,2,0,0,, Avsunviroidae
+10,NC_003613.1,33,13,4,1,5,2,0,0,0,0,, Pospiviroidae
+11,NC_003611.1,14,16,0,5,0,1,0,0,0,2,, Pospiviroidae
+12,NC_003540.1,25,6,7,5,2,1,1,1,0,0,, Avsunviroidae
+13,NC_003538.1,27,23,11,2,0,0,0,0,0,0,, Pospiviroidae
+14,NC_003539.1,19,5,5,3,2,1,0,1,0,0,, Pospiviroidae
+15,NC_003264.1,27,10,5,3,2,0,0,0,0,0,, Pospiviroidae
+16,NC_001351.1,18,16,8,2,1,0,1,0,0,0,, Pospiviroidae
+17,NC_022893.1,21,18,6,4,0,1,0,0,1,2,, unclassified viroids
+18,NC_021720.1,32,7,7,3,5,0,0,1,0,0,, Pospiviroidae
+19,NC_020160.1,31,18,7,0,1,0,1,0,0,0,, Pospiviroidae
+20,NC_011590.1,20,13,8,7,0,0,0,0,0,0,, Pospiviroidae
+21,NC_011362.1,22,9,3,4,4,1,2,1,1,0,, unclassified viroids
+22,NC_014129.1,17,20,12,5,0,0,0,0,0,0,, unclassified viroids
+23,NC_012805.1,32,8,6,4,0,0,0,0,0,0,, Pospiviroidae
+24,NC_012127.1,21,7,5,4,0,1,0,0,0,0,, Pospiviroidae
+25,NC_004359.1,21,9,7,4,5,0,0,0,1,0,, Pospiviroidae
+26,NC_010308.1,33,28,3,4,0,0,0,0,0,0,persimmon isolate, unclassified viroids
+27,NC_010165.1,28,6,6,1,2,0,0,0,2,0,, Pospiviroidae
+28,NC_004728.1,21,9,8,3,1,3,1,0,0,0,, Avsunviroidae
+29,NC_003882.1,13,10,12,2,0,1,0,0,0,0,, Pospiviroidae
+30,NC_003777.1,28,17,9,4,0,0,0,0,0,0,, unclassified viroids
+31,NC_003637.1,24,19,7,1,3,1,0,0,0,0,OG1, Pospiviroidae
+32,NC_003612.1,26,11,6,4,2,2,1,1,0,0,, Pospiviroidae
+33,NC_003553.1,24,15,7,6,0,0,0,0,0,0,, Pospiviroidae
+34,NC_003463.1,29,12,4,3,1,0,0,0,0,0,, Pospiviroidae
+35,NC_002030.1,21,16,8,2,2,1,0,0,0,0,, Pospiviroidae
+36,NC_002015.1,16,22,7,5,1,0,0,0,0,0,, Pospiviroidae
+37,NC_001340.1,34,11,5,3,2,1,0,0,0,0,, Pospiviroidae
+38,NC_000885.1,18,18,11,3,1,1,0,0,0,0,, Pospiviroidae
+39,NC_001462.1,20,7,2,5,0,0,0,0,1,0,, Pospiviroidae
+40,NC_001920.1,36,18,8,2,0,0,0,0,0,0,, Pospiviroidae
+41,NC_001410.1,10,10,5,3,2,1,0,0,0,1,, Avsunviroidae
+42,NC_001464.1,26,16,11,2,1,0,1,0,0,0,, Pospiviroidae
+43,NC_001471.1,21,8,2,3,0,1,2,1,1,0,, Pospiviroidae
+44,NC_001558.1,27,15,9,7,0,0,0,0,0,0,, Pospiviroidae
+45,NC_001553.1,24,20,4,3,2,0,0,0,0,0,, Pospiviroidae
+46,NC_001830.1,20,5,10,5,1,1,2,0,0,0,, Pospiviroidae
