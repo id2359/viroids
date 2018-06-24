@@ -28,7 +28,7 @@ def ttsplit(x,y):
     x_train, x_test, y_train, y_test = train_test_split(x,
                                                         y,
                                                         test_size=0.50,
-                                                        random_state=42)
+                                                        random_state=46)
     return x_train, x_test, y_train, y_test
 
 
@@ -46,13 +46,9 @@ train = load_csv(TRAIN_CSV)
 x = get_features(train)
 y = get_target(train)
 
-
-# In[10]:
-
 x_train, x_test, y_train, y_test = ttsplit(x,y)
 
-
-rfr = RandomForestClassifier(max_depth=2, random_state=0)
+rfr = RandomForestClassifier(max_depth=3, random_state=0)
 
 pipeline = make_pipeline(rfr)
 
@@ -62,4 +58,5 @@ predictions = model.predict(x_test)
 
 print "y_test = %s" % y_test
 print "predictions = %s" % predictions
+
 print model.score(x_test, y_test)
