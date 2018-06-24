@@ -64,5 +64,5 @@ print predictions
 
 #print "MSE = %s" % np.sqrt(mean_squared_error(predictions, y_test))
 
-#print model.score(x_test, y_test)
+print model.score(x_test, y_test)
 
