@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+import re
+import fileinput
+
+class State:
+    IN_SEQUENCE = 1
+    IN_SHAPE = 2
+
+
+line_no = 0
+
+current_id = None
+current_seq = None
+current_shape = None
+
+
+def get_shape(line):
+    shape, rest = line.split(" ")
+    return shape
+
+def emit_features(accession, seq, shape):
+    assert len(seq) == len(shape)
+    dots = re.findall("\.+", shape)
+    dot_sizes = {}
+
+    for i in range(1,11):
+        dot_sizes[i] = dots.count("." * i)
+
+    line = ",".join([accession] + [str(dot_sizes[i]) for i in range(1,11)])
+    print line
+
+
+for line in fileinput.input():
+    line = line.strip()
+    line_no += 1
+    m = line_no % 3
+    if m == 1:
+        current_seq = None
+        current_shape = None
+        current_id = None
+        # accession number
+        assert line.startswith(">"), "Not an accession id"
+        current_id = line[1:].split()[0]
+    elif m == 2:
+        current_seq = line.strip()
+    elif m == 0:
+        current_shape = get_shape(line)
+        assert len(current_shape) == len(current_seq)
+
+        emit_features(current_id,
+                      current_seq,
+                      current_shape)
+    else:
+        raise Exception("???")
+
