@@ -1,4 +1,5 @@
 import sys
+import pickle
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -59,4 +60,9 @@ predictions = model.predict(x_test)
 print "y_test = %s" % y_test
 print "predictions = %s" % predictions
 
-print model.score(x_test, y_test)
+score = model.score(x_test, y_test)
+
+if float(score) > 0.90:
+    with open("model.pickle","wb") as pickle_file:
+        pickle.dump(model, pickle_file)
+
