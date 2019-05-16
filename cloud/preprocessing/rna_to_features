@@ -1,0 +1,2 @@
+#!/bin/sh
+python create_fingerprint.py $RNAFOLD_FILE > $FEATURE_FILE

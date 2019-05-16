@@ -1,0 +1,8 @@
+actions:
+  - entrypoint: "/bin/sh"
+    commands: ["-c", "'RNAfold -p -d2 --noLP --noPS < /data/input0 > /data/output0'" ]
+    mounts:
+      - disk: gcloud-shared
+        path: /data
+        readOnly: false
+    imageUri: "gcr.io/viroids/assemble2"
