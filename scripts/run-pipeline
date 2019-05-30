@@ -1,0 +1,13 @@
+#!/bin/sh
+#MYREGION="us-central1"
+#MYBUCKET="lrviroids-data"
+
+MYREGION="australia-southeast1"
+MYBUCKET="lrgcp-viroids-data"
+
+gcloud alpha genomics pipelines run \
+    --regions $MYREGION \
+    --logging gs://$MYBUCKET/logs/pipeline.log \
+    --inputs FASTA_FILE=gs://$MYBUCKET/snps.fasta \
+    --outputs OUTPUT_FILE=gs://$MYBUCKET/snps.rnafold \
+    --pipeline-file ~/pipelines/viroids_classifier_pipeline.yaml
