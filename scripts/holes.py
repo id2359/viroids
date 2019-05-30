@@ -1,5 +1,4 @@
 import sys
-from collections import defaultdict
 
 rna_fold_file = sys.argv[1]
 
@@ -12,8 +11,6 @@ hole_start = 0
 in_hole = False
 
 
-
-
 for line in lines:
     line = line.strip()
     if line.startswith(">"):
@@ -24,8 +21,8 @@ for line in lines:
             "G" in line]):
         continue
 
-    l = line.split(" ")
-    structure = l[0]
+    words = line.split(" ")
+    structure = words[0]
     for index, char in enumerate(structure):
         if in_hole:
             if char == ".":
@@ -43,13 +40,10 @@ for line in lines:
 
 
 hole_map = {"vsmall": 0,
-                 "small": 0,
-                 "medium": 0,
-                 "large": 0,
-                 "huge": 0}
-
-
-
+            "small": 0,
+            "medium": 0,
+            "large": 0,
+            "huge": 0}
 
 
 for pos, size in holes:
@@ -66,29 +60,10 @@ for pos, size in holes:
 
 
 finger_print = "%s %s %s %s %s" % (hole_map["vsmall"],
-        hole_map["small"],
-        hole_map["medium"],
-        hole_map["large"],
-        hole_map["huge"])
-
+                                   hole_map["small"],
+                                   hole_map["medium"],
+                                   hole_map["large"],
+                                   hole_map["huge"])
 
 
 print finger_print
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-
-
-
-

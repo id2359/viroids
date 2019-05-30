@@ -3,14 +3,17 @@ import sys
 import subprocess
 from Bio import SeqIO
 
+
 def hamming(str1, str2):
-	return sum(itertools.imap(str.__ne__, str1, str2))
+    return sum(itertools.imap(str.__ne__, str1, str2))
+
 
 def get_mutations(nt):
     # return the other letters?
-    l = ['G','C','U','A']
-    l.remove(nt)
+    codes = ['G', 'C', 'U', 'A']
+    codes.remove(nt)
     return l
+
 
 def create_mutation(seq, pos, mut):
     result = []
@@ -22,12 +25,14 @@ def create_mutation(seq, pos, mut):
             result.append(seq[i])
     return "".join(result)
 
+
 def get_sequence(fasta_file):
     fasta = SeqIO.read(fasta_file, "fasta")
     s = "%s" % fasta.seq
     # orig fasta file has T but seq in output of RNA file has U
     # in place of T ????
     return s.replace("T", "U")
+
 
 def parse_shape(rna_fold_output):
     lines = rna_fold_output.split("\n")
@@ -37,7 +42,7 @@ def parse_shape(rna_fold_output):
     pos = 0
     l = len(s)
     space = ' '
-    shape_chars = ['.','(',')']
+    shape_chars = ['.', '(', ')']
     char = ''
 
     while char != space and pos < l:
@@ -50,6 +55,7 @@ def parse_shape(rna_fold_output):
     r = "".join(shape)
     return r
 
+
 def run_rna_fold(sequence):
     # return shape
     # to do
@@ -58,19 +64,19 @@ def run_rna_fold(sequence):
         f.write("> tmp seq\n")
         f.write(sequence)
     return rna_fold(tmp_file)
-    
-    
+
+
 def rna_fold(fasta_file):
     cmd = ["RNAfold", "-p", "-d2", "--noLP", "--noPS", "-i", fasta_file]
     result = subprocess.check_output(cmd)
     shape_part = parse_shape(result)
     return shape_part
-    
+
 
 def get_shape(fasta_file):
     return rna_fold(fasta_file)
-    
-    
+
+
 wild_fasta_file = sys.argv[1]
 
 wild_seq = get_sequence(wild_fasta_file)
@@ -91,12 +97,12 @@ for pos in range(l):
     hamming_dists = []
     for mut in get_mutations(nt):
         print "mutation at pos %s = %s" % (pos, mut)
-        
+
         mutation_seq = create_mutation(wild_seq, pos, mut)
         mutation_shape = run_rna_fold(mutation_seq)
         hamming_dist = hamming(wild_shape, mutation_shape)
         hamming_percentage = float(hamming_dist) / float(len(mutation_shape))
-        
+
         hamming_dists.append(hamming_percentage)
     average_hamming = float(sum(hamming_dists)) / float(len(hamming_dists))
     score = round(average_hamming, 4)
@@ -123,4 +129,3 @@ with open(score_file, "w") as sf:
         sf.write("%s " % score_map[pos])
 
 print "most effective mutation pos = %s score = %s" % (best_pos, best_score)
-
